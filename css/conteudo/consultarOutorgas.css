@@ -1,0 +1,77 @@
+#consultar {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    max-height: auto;
+
+}
+
+.cp {
+    height: 96vh;
+    background-color: #a1d8e2;
+
+}
+#solicitacao{
+    display: flex;
+}
+#analise{
+    display: none;
+}
+#aceitos{
+    display: none;
+}
+#rejeitados{
+    display: none;
+}
+
+
+.consultar-pedidos {
+    display: flex;
+    justify-content: center;
+    min-height: 8rem;
+    max-height: auto;
+    width: 66vw;
+    background-color:  #a1d8e2;
+    padding: 3vh 2vw;
+
+}
+
+.listaPedidos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 1rem;
+    width: 60.8vw;
+    max-height: auto;
+    background-color: #a1d8e2;
+
+}
+
+.card {
+
+    font-size: 50%;
+    background-color: #71c1cc;
+    width: 16rem;
+    height: 8rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 1rem;
+}
+
+.card:hover {
+    border: solid 1px;
+}
+
+.carde {
+
+    font-size: 50%;
+    background-color: #71c1cc;
+    width: 16rem;
+    height: 8rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 1rem;
+}
+
+.carde:hover {
+    border: solid 1px;
+}
+

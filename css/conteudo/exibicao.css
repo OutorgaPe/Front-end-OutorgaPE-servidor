@@ -1,0 +1,73 @@
+#exibicao{
+    width: 100vw;
+    display: none;
+    
+    justify-content: center;
+}
+
+
+#barraInternaExibicao {
+    display: none;
+    /*  display: flex; */
+    width: 100%;
+    height: 100%;
+    width: 100%;
+}
+
+#barraInternaExibicao button {
+    background-color: #54c2c2;
+    border: none;
+    height: 100%;
+    width: 12%;
+
+}
+#barraInternaExibicao button:hover {
+    background-color: #77b5c0;
+}
+
+#exibicao form {
+    background-color: #a6d8d8;
+
+    width: 65vw;
+
+}
+#exibicao form > fieldset{
+    border: none;
+}
+#exibicao form  fieldset{
+    width: 62vw;
+        border: none;
+
+}
+#exibicao form fieldset .esconder{
+    display: flex;
+    height: 7vh;
+    margin-bottom: 1vh;
+    gap: 3vw;
+
+}
+
+.campo{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: auto;
+}
+.campo input{
+    height: 50%;
+    width: 18vw;
+}
+#exibicao form button{ 
+    width: 9vw;
+    height: 4vh;
+    border: none ;
+    font-size: 1.5rem;
+    border-radius: 0.6rem;
+}
+#negar{ 
+    background-color: rgb(240, 57, 57);
+color: aliceblue;}
+#aceitar{
+    background-color: rgb(32, 255, 181);
+}
+

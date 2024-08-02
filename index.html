@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outorga PE Servidor</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="https://th.bing.com/th/id/OIP.SjqkgnYEnZ5bmJ4mSB182gHaE9?rs=1&pid=ImgDetMain"
+        type="image/x-icon">
+    <script type="module" src="modulos/modulo.js"></script>
+</head>
+
+<body>
+    <div class="barra">
+        <div id="barraInterna">
+
+            <button id="so"> Solicitações </button>
+            <button id="ac"> Aceitos </button>
+            <button id="re"> Rejeitados </button>
+            <button id="sair">Sair</button>
+        </div>
+        <div id="barraInternaExibicao">
+
+            <button id="voltar">voltar</button>
+            
+        </div>
+    </div>
+    <div id="login">
+        <h2>Login</h2>
+        <form id="form-Login">
+            <input type="text" id="loginn" name="email" placeholder="Usuario" required>
+            <input type="password" id="senha" name="senha" placeholder="Senha" required>
+            <button id="aaa">Entrar</button>
+        </form>
+    </div>
+    <div id="principal">
+        <div id="consultar">
+            <div class="cp" id="solicitacao">
+                
+             <!--   <div class="consultar-pedidos">
+                    <div class="listaPedidos">
+                        <div class="card" id= "">
+                            <h1>Numero processo: #126789</h1>
+                            <h1>Status: Aguardando</h1>
+                            <h1>data abertura: 21/12/2001</h1>
+                        </div>
+                       
+                        <div class="card">
+                            <h1>Numero processo: #126789</h1>
+                            <h1>Status: Aguardando</h1>
+                            <h1>data abertura: 21/12/2001</h1>
+                        </div>
+                    </div>
+
+                </div>-->
+            </div>
+            <div class="cp" id="aceitos">
+               
+            </div>
+            <div class="cp" id="rejeitados">
+                
+            </div>
+         
+        </div>
+        <div id="exibicao">
+                
+            <form id="formExibicao">
+
+                <fieldset>
+                    <legend>Informações do Formulário</legend>
+                    <fieldset class="esconder">
+                        <div class="campo">
+                            <label for="modalidadeForm">Modalidade:</label>
+                            <input type="text" id="modalidadeForm" name="modalidadeForm">
+                        </div>
+                        <div class="campo">
+                            <label for="nomeImovelForm">Nome do Imóvel:</label>
+                            <input type="text" id="nomeImovelForm" name="nomeImovelForm">
+                        </div>
+                        <div class="campo">
+                            <label for="cepForm">CEP:</label>
+                            <input type="text" id="cepForm" name="cepForm">
+                          
+                        </div>
+                    </fieldset>
+            
+                    <fieldset class="esconder">
+                        <div class="campo">
+                            <label for="logradouroForm">Logradouro:</label>
+                            <input type="text" id="logradouroForm" name="logradouroForm">
+                        </div>
+                        <div class="campo">
+                            <label for="cidadeForm">Cidade:</label>
+                            <input type="text" id="cidadeForm" name="cidadeForm">
+                        </div>
+                        <div class="campo">
+                            <label for="latitudeForm">Latitude:</label>
+                            <input type="text" id="latitudeForm" name="latitudeForm">
+                        </div>
+                    </fieldset>
+            
+                    <fieldset class="esconder">
+                        <div class="campo">
+                            <label for="longitudeForm">Longitude:</label>
+                            <input type="text" id="longitudeForm" name="longitudeForm">
+                        </div>
+                        <div class="campo">
+                            <label for="finalidadeForm">Finalidade:</label>
+                            <input type="text" id="finalidadeForm" name="finalidadeForm">
+                        </div>
+                    </fieldset>
+            
+                </fieldset>
+            
+                <fieldset>
+                    <legend>Informações do Usuário</legend>
+                    <fieldset class="esconder">
+                        <legend>Informações Pessoais</legend>
+                        <div class="campo">
+                            <label for="nomeUsuario">Nome do Usuário:</label>
+                            <input type="text" id="nomeUsuario" name="nomeUsuario">
+                        </div>
+                        <div class="campo">
+                            <label for="cpfCnpjUsuario">CPF/CNPJ:</label>
+                            <input type="text" id="cpfCnpjUsuario" name="cpfCnpjUsuario">
+                        </div>
+                        
+                    </fieldset>
+            
+                    <fieldset>
+                        <legend>Endereço Usuario</legend>
+                        <fieldset class="esconder">
+                            <div class="campo">
+                                <label for="cepUsuario">CEP:</label>
+                                <input type="text" id="cepUsuario" name="cepUsuario">
+                            </div>
+                            <div class="campo">
+                                <label for="logradouroUsuario">Logradouro:</label>
+                                <input type="text" id="logradouroUsuario" name="logradouroUsuario">
+                            </div>
+                        </fieldset>
+                        <fieldset class="esconder">                                    
+                            <div class="campo">
+                                <label for="numeroCasaUsuario">Número da Casa:</label>
+                                <input type="text" id="numeroCasaUsuario" name="numeroCasaUsuario">
+                            </div>
+                            <div class="campo">
+                                <label for="complementoUsuario">Complemento:</label>
+                                <input type="text" id="complementoUsuario" name="complementoUsuario">
+                            </div>
+                        </fieldset>
+                        <fieldset class="esconder">
+                            <div class="campo">
+                                <label for="bairroUsuario">Bairro:</label>
+                                <input type="text" id="bairroUsuario" name="bairroUsuario">
+                            </div>
+                            <div class="campo">
+                                <label for="cidadeUsuario">Cidade:</label>
+                                <input type="text" id="cidadeUsuario" name="cidadeUsuario">
+                            </div>
+                            <div class="campo">
+                                <label for="estadoUsuario">Estado:</label>
+                                <input type="text" id="estadoUsuario" name="estadoUsuario">
+                            </div>
+                        </fieldset>
+                    </fieldset>
+            
+                    <fieldset class="esconder">
+                        <legend>Contato</legend>
+                        <div class="campo">
+                            <label for="emailUsuario">E-mail:</label>
+                            <input type="email" id="emailUsuario" name="emailUsuario">
+                        </div>
+                        <div class="campo">
+                            <label for="telefoneUsuario">Telefone:</label>
+                            <input type="text" id="telefoneUsuario" name="telefoneUsuario">
+                        </div>
+                        <div class="campo">
+                            <label for="celularUsuario">Celular:</label>
+                            <input type="text" id="celularUsuario" name="celularUsuario">
+                        </div>
+                    </fieldset>
+                </fieldset>
+
+                <fieldset>
+                    <button id="aceitar"> aceitar</button>
+                     <button id="negar">recusar</button>
+                    </fieldset>
+            </form>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
